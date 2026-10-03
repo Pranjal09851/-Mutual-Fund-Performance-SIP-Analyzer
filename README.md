@@ -17,7 +17,7 @@ Data: AMFI NAV via [mfapi.in](https://www.mfapi.in)
 ## How it was built
 | Layer | What I did |
 |---|---|
-| Ingestion | Python script downloads NAV history for [N] Direct Growth funds to CSV |
+| Ingestion | Python script downloads NAV history for 13 Direct Growth funds to CSV |
 | Storage | Star schema: `dim_fund`, `fact_nav`, `dim_date`, with indexes |
 | Validation | Row counts, date ranges, checks for daily NAV jumps above 15% |
 | Analytics | Daily return, running peak and drawdown, CAGR, volatility, Sharpe (6.5% assumed risk-free rate), category rank |
